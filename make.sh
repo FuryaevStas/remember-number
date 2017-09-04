@@ -1,7 +1,7 @@
 #!/bin/bash
 
-OUTPUT=game
-LIBS=ncurses
-SRC="core.cpp render.cpp"
+OUTPUT="game"
+LIBS="-lncurses"
+SRC="core.cpp loop.cpp"
 
-echo g++ $SRC -o $OUTPUT -l $LIBS; g++ $SRC -o $OUTPUT -l $LIBS
+echo g++ $SRC -o $OUTPUT $LIBS; g++ $SRC -o $OUTPUT $LIBS
